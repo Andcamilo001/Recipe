@@ -21,7 +21,7 @@ struct RecipeList: View {
     var body: some View {
         NavigationView {
             HStack {
-                if(self.recents.getRecentCount() > 0){
+                /*if(self.recents.getRecentCount() > 0){
                     Text("Recents")
                         .font(.headline)
                         .padding()
@@ -40,7 +40,7 @@ struct RecipeList: View {
                         }.listRowInsets(EdgeInsets())
                     }.padding()
                         .listRowInsets(EdgeInsets())
-                }
+                }*/
                 
                 
                 

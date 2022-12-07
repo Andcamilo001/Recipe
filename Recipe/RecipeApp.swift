@@ -42,7 +42,7 @@ struct RecipeApp: App {
     
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            SplashScreenView()
             //.environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
