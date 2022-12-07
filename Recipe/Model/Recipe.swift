@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Recipe: Identifiable, Equatable {
+class Recipe: Identifiable, Equatable {
     
     static func == (lhs: Recipe, rhs: Recipe) -> Bool {
         if(lhs.title == rhs.title){
@@ -30,8 +30,7 @@ struct Recipe: Identifiable, Equatable {
     var id = UUID()
     var servings: String?
     var readyIn: String?
-    var likeCount: String?
-    
+    var likeCount: String?    
     
     var title: String?
     var imageUrl: String?

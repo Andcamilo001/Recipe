@@ -79,7 +79,7 @@ class FetchRecipe{
             ids += String(id)+","
         }
         print(ids)
-        let url = "\(Constans.urls.infomationBulk)?ids=\(ids)\(Constans.urls.apiKEY)"
+        let url = "\(Constans.urls.infomationBulk)ids=\(ids)\(Constans.urls.apiKEY)"
         
         
         let request = NSMutableURLRequest(url: NSURL(string: url)! as URL,
@@ -182,7 +182,7 @@ class FetchRecipe{
                 }
                 
                 var err: NSError?
-                //i.recipeImage = data!
+                i.recipeImage = data!
                 semaphore.signal()
                 
             })
